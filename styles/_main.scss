@@ -1,0 +1,285 @@
+.content {
+	padding-bottom: 2%;
+	.introText p::first-letter {
+		font-size: 4rem;
+		color: darken($teal, 8%);
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		.introText p::first-letter {
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.content {
+		.introText {
+			padding: 2%;
+		}
+	}
+}
+
+form {
+	padding: 3%;
+	fieldset {
+		width: 100%;
+		margin: 0 auto;
+		border: none;
+		padding-left: 20%;
+	}
+}
+
+input[type="radio"] {
+	visibility: hidden;
+	position: absolute;
+}
+
+label {
+	position: relative;
+	width: calc(50% - 5%);
+	float: left;
+	margin-left: 5%;
+	text-align: left;
+	padding: 3% 0 3% 4%;
+	font-family: $headerFont;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: -40px;
+		top: 19px;
+		border: 8px solid lighten($teal, 2%);
+		background: lighten($darkGrey, 15%);
+		transform: rotate(45deg);
+		z-index: 5;
+	}
+}
+.selected {
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: -40px;
+		top: 19px;
+		border: 8px solid lighten($teal, 2%);
+		background: fade-out($orange, 0.2);
+		transform: rotate(45deg);
+		z-index: 10;
+	}
+}
+
+@media (max-width: 600px) {
+	form {
+		fieldset {
+			padding-left: 15%;
+		}
+	}
+	label {
+		padding: 5% 0 5% 4%; 
+		&::before {
+			top: 15px;
+		}
+	}
+	.selected {
+		&::after {
+			top: 15px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	form {
+		fieldset {
+			padding-left: 12%;
+		}
+	}
+	label {
+		padding-left: 2%; 
+		&::before {
+			width: 10px;
+			height: 10px;
+			top: 15px;
+		}
+	}
+	.selected {
+		&::after {
+			width: 10px;
+			height: 10px;
+			top: 15px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	form {
+		fieldset {
+			padding-left: 20%;
+		}
+	}
+	label {
+		width: 100%; 
+		&::before {
+			width: 10px;
+			height: 10px;
+			top: 15px;
+		}
+	}
+	.selected {
+		&::after {
+			width: 10px;
+			height: 10px;
+			top: 15px;
+		}
+	}
+}
+
+
+.submit {
+	padding: 2%;
+	margin: 7% 0 5% 0;
+	font-family: $headerFont;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 0;
+	border-radius: 2px;
+	background: fade-out($orange, 0.3);
+	color: $whiteSmoke;
+	box-shadow: inset 1px 1px 3px darken($orange, 30%), 1px 1px 3px darken($orange, 30%);
+	text-shadow: 1px 1px 1px $softBlack;
+	&:hover {
+		background: lighten($teal, 5%);
+		color: darken($darkGrey, 50%);
+		text-shadow: 1px 1px 1px lighten($darkGrey, 25%);
+	}
+	&:focus {
+		outline: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.submit {
+		padding: 3%;
+	}
+}
+
+.result {
+	padding: 0 3%;
+	.bookStyle, .wineStyle {
+		width: 100%;
+		p.describe {
+			font-size: 1.8rem;
+			padding: 2% 7% 4% 7%;
+			text-align: left;
+		}
+	}
+	.bookStyle {
+		.cover {
+			width: 35%;
+			margin-bottom: 3%;
+		}
+		.title, .author {
+			font-size: 2.5rem;
+			color: $orange;
+			margin-top: 2%;
+		}
+	}
+	.wineStyle {
+		.winePic {
+			width: 35%;	
+		}
+		.wineName, .wineDescribe {
+			font-size: 2.5rem;
+			color: $orange;
+			margin-top: 2%;
+		}
+	}
+}
+
+footer {
+	max-width: 100%;
+	padding: 1.5%;
+	background: $teal;
+	.copyright {
+		margin-left: 41%;
+	}
+	p, a {
+		font-size: 1.7rem;
+		font-family: $headerFont;
+		color: $whiteSmoke;
+		text-shadow: 1px 1px 1px $darkGrey;
+	}
+	p {
+		float: left;
+		padding: 0 2%;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			color: darken($teal, 15%);
+			font-weight: bold;
+		}
+	}
+	.fa {
+		float: left;
+		font-size: 2.5rem;
+		color: lighten($darkGrey, 25%);
+		&:hover {
+			color: darken($teal, 15%);
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	footer .copyright {
+		margin-left: 32%;
+	}
+}
+
+@media (max-width: 600px) {
+	footer .copyright {
+		margin-left: 26%;
+	}
+}
+
+@media (max-width: 480px) {
+	footer {
+		padding: 4%;
+		.copyright {
+			margin-left: 17.5%;	
+		}
+		p {
+			margin-top: 0.5%;
+		}
+		.fa {
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	footer {
+		padding: 4%;
+		.copyright {
+			margin-left: 0;
+		}
+		p {
+			margin-top: 0.5%;
+			font-size: 1.5rem;
+		}
+		.fa {
+			font-size: 3rem;
+		}
+	}
+}
+

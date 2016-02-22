@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Book Nerd's Night In</title>
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Nixie+One|Ledger' rel='stylesheet' type='text/css'>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>A Book Nerd's Night In</h1>
+			<div class="svgs clearfix">
+				<img class="wineGlass" src="images/noun_wine.svg" alt="Half full wine glass icon"> <!-- Created by Anton Noskov via the Noun Project-->
+				<img src="images/noun_book_glasses.svg" alt="Pair of eye glasses resting on top of a book icon"> <!-- Created by Creative Stall via the Noun Project-->
+				<img class="wineGlass" src="images/noun_wine.svg" alt="Half full wine glass icon"> <!-- Created by Anton Noskov via the Noun Project-->
+			</div>
+		</header>
+		<main>
+			<section class="content">
+				<div class="introText">
+					<p>What book do I read this weekend?</p>
+					<p>Should I have a glass of wine with said book?</p>
+					<p>The struggle is real.</p>
+					<p>Take the guesswork out of the equation...</p>
+				</div>
+				<form action="" novalidate>
+					<h2>Set The Tone...</h2>
+					<fieldset class="bookType">
+						<input type="radio" name="bookCategory" id="happy" value="happy" required>
+						<label for="happy">Happy</label>
+						<input type="radio" name="bookCategory" id="sad" value="sad" required>
+						<label for="sad">Sad</label>
+						<input type="radio" name="bookCategory" id="funny" value="funny" required>
+						<label for="funny">Funny</label>
+						<input type="radio" name="bookCategory" id="serious" value="serious" required>
+						<label for="serious">Serious</label>
+						<input type="radio" name="bookCategory" id="quirky" value="quirky" required>
+						<label for="quirky">Quirky</label>
+						<input type="radio" name="bookCategory" id="classic" value="classic" required>
+						<label for="classic">Classic</label>
+						<input type="radio" name="bookCategory" id="beautiful" value="beautiful" required>
+						<label for="beautiful">Beautiful</label>
+						<input type="radio" name="bookCategory" id="haunting" value="haunting" required>
+						<label for="haunting">Haunting</label>
+						<input type="radio" name="bookCategory" id="reality" value="reality" required>
+						<label for="reality">Reality</label>
+						<input type="radio" name="bookCategory" id="fantasy" value="fantasy" required>
+						<label for="fantasy">Fantasy</label>
+					</fieldset>
+					<h2>Choose Your Pleasure...</h2>
+					<fieldset class="booze" id="wineType">
+						<input type="radio" name="boozeCategory" id="redWine" value="Red Wine" required>
+						<label for="redWine">Red Wine</label>
+						<input type="radio" name="boozeCategory" id="whiteWine" value="White Wine" required>
+						<label for="whiteWine">White Wine</label>
+					</fieldset>
+					<input type="submit" class="submit" value="Best Night Ever">
+				</form>
+				<section class="result clearfix">
+					<div id="bookInfo" class="bookStyle"></div>
+					<div id="wineInfo" class="wineStyle"></div>
+				</section>
+			</section>
+		</main>
+	</div>
+	<footer class="clearfix">
+		<div class="copyright">
+			<a href="http://twitter.com/lodavidcodes"><i class="fa fa-twitter-square"></i></a>
+			<p>&#169; 2016 | <a href="http://laurendavid.ca">Lauren David</a></p>
+			<a href="https://ca.linkedin.com/in/laurendavidcodes"><i class="fa fa-linkedin-square"></i></a>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+// VARIABLES //
+
+$whiteSmoke: #fffff5;
+$beige: #D4C8BD;
+$teal: #31758C;
+$darkGrey: #606060;
+$orange: #BC5100;
+$softBlack: #2B2B2B;
+
+$baseFont: 'Ledger', serif;
+$headerFont: 'Nixie One', cursive;
+
+// GLOBAL //
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	background-image: url('../images/argyle.png');
+	background-repeat: repeat;
+	background-position: center center;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2% 0 0 0;
+	background: fade-out($beige, 0.6);
+}
+
+h1, h2, h3 {
+	font-family: $headerFont;
+}
+
+h1 {
+	font-size: 7rem;
+	letter-spacing: 5px;
+	color: darken($orange, 5%);
+	text-shadow: 1px 1px 3px darken($darkGrey, 20%);
+}
+
+h2 {
+	font-size: 4rem;
+	letter-spacing: 3px;
+	padding: 0 3%;
+	margin-top: 7%;
+	color: darken($orange, 5%);
+	text-shadow: 1px 1px 2px $darkGrey;
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 6rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 2.5rem; 
+	}
+}
+
+
+.svgs {
+	width: 80%;
+	margin: 10% auto 0 auto;
+	img {
+	float: left;
+	max-width: 50%; 
+	}
+	.wineGlass {
+		max-width: 25%;
+		margin-top: 10%;
+	}
+}
+
+p {
+	font-family: $baseFont;
+	letter-spacing: 1px;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	margin: 0;
+	color: $teal;
+}
+
+@media (max-width: 600px) {
+	p {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	p {
+		font-size: 1.7rem;
+	}
+}
+
+
+
+
+
+

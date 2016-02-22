@@ -1,0 +1,186 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+audio, canvas, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+[hidden] { display: none; }
+
+html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+a:focus { outline: thin dotted; }
+
+a:active, a:hover { outline: 0; }
+
+h1 { font-size: 2em; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: 700; }
+
+dfn { font-style: italic; }
+
+mark { background: #ff0; color: #000; }
+
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+
+pre { white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: \201C \201D \2018 \2019; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -.5em; }
+
+sub { bottom: -.25em; }
+
+img { border: 0; }
+
+svg:not(:root) { overflow: hidden; }
+
+fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+
+button, input { line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
+
+button[disabled], input[disabled] { cursor: default; }
+
+input[type=checkbox], input[type=radio] { box-sizing: border-box; padding: 0; }
+
+input[type=search] { -webkit-appearance: textfield; box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+body, figure { margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { box-sizing: border-box; }
+
+html { font-size: 62.5%; }
+
+body { margin: 0; padding: 0; font-size: 16px; font-size: 1.6rem; background-image: url("../images/argyle.png"); background-repeat: repeat; background-position: center center; }
+
+.wrapper { max-width: 1080px; margin: 0 auto; text-align: center; padding: 2% 0 0 0; background: rgba(212, 200, 189, 0.4); }
+
+h1, h2, h3 { font-family: "Nixie One", cursive; }
+
+h1 { font-size: 7rem; letter-spacing: 5px; color: #a34600; text-shadow: 1px 1px 3px #2d2d2d; }
+
+h2 { font-size: 4rem; letter-spacing: 3px; padding: 0 3%; margin-top: 7%; color: #a34600; text-shadow: 1px 1px 2px #606060; }
+
+@media (max-width: 600px) { h1 { font-size: 6rem; }
+  h2 { font-size: 3rem; } }
+
+@media (max-width: 480px) { h1 { font-size: 4rem; }
+  h2 { font-size: 2.5rem; } }
+
+.svgs { width: 80%; margin: 10% auto 0 auto; }
+
+.svgs img { float: left; max-width: 50%; }
+
+.svgs .wineGlass { max-width: 25%; margin-top: 10%; }
+
+p { font-family: "Ledger", serif; letter-spacing: 1px; font-size: 2.5rem; line-height: 1.6; margin: 0; color: #31758C; }
+
+@media (max-width: 600px) { p { font-size: 2rem; } }
+
+@media (max-width: 480px) { p { font-size: 1.7rem; } }
+
+.content { padding-bottom: 2%; }
+
+.content .introText p::first-letter { font-size: 4rem; color: #265c6e; }
+
+@media (max-width: 480px) { .content .introText p::first-letter { font-size: 3rem; } }
+
+@media (max-width: 400px) { .content .introText { padding: 2%; } }
+
+form { padding: 3%; }
+
+form fieldset { width: 100%; margin: 0 auto; border: none; padding-left: 20%; }
+
+input[type="radio"] { visibility: hidden; position: absolute; }
+
+label { position: relative; width: -webkit-calc(50% - 5%); width: calc(50% - 5%); float: left; margin-left: 5%; text-align: left; padding: 3% 0 3% 4%; font-family: "Nixie One", cursive; font-size: 2rem; font-weight: bold; letter-spacing: 3px; }
+
+label::before { content: ''; display: inline-block; width: 15px; height: 15px; position: absolute; left: -40px; top: 19px; border: 8px solid #347b94; background: #868686; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); z-index: 5; }
+
+.selected::after { content: ''; display: inline-block; width: 15px; height: 15px; position: absolute; left: -40px; top: 19px; border: 8px solid #347b94; background: rgba(188, 81, 0, 0.8); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); z-index: 10; }
+
+@media (max-width: 600px) { form fieldset { padding-left: 15%; }
+  label { padding: 5% 0 5% 4%; }
+  label::before { top: 15px; }
+  .selected::after { top: 15px; } }
+
+@media (max-width: 480px) { form fieldset { padding-left: 12%; }
+  label { padding-left: 2%; }
+  label::before { width: 10px; height: 10px; top: 15px; }
+  .selected::after { width: 10px; height: 10px; top: 15px; } }
+
+@media (max-width: 400px) { form fieldset { padding-left: 20%; }
+  label { width: 100%; }
+  label::before { width: 10px; height: 10px; top: 15px; }
+  .selected::after { width: 10px; height: 10px; top: 15px; } }
+
+.submit { padding: 2%; margin: 7% 0 5% 0; font-family: "Nixie One", cursive; font-size: 2rem; font-weight: bold; letter-spacing: 2px; border: 0; border-radius: 2px; background: rgba(188, 81, 0, 0.7); color: #fffff5; box-shadow: inset 1px 1px 3px #230f00, 1px 1px 3px #230f00; text-shadow: 1px 1px 1px #2B2B2B; }
+
+.submit:hover { background: #38859f; color: black; text-shadow: 1px 1px 1px #a0a0a0; }
+
+.submit:focus { outline: 0; }
+
+@media (max-width: 480px) { .submit { padding: 3%; } }
+
+.result { padding: 0 3%; }
+
+.result .bookStyle, .result .wineStyle { width: 100%; }
+
+.result .bookStyle p.describe, .result .wineStyle p.describe { font-size: 1.8rem; padding: 2% 7% 4% 7%; text-align: left; }
+
+.result .bookStyle .cover { width: 35%; margin-bottom: 3%; }
+
+.result .bookStyle .title, .result .bookStyle .author { font-size: 2.5rem; color: #BC5100; margin-top: 2%; }
+
+.result .wineStyle .winePic { width: 35%; }
+
+.result .wineStyle .wineName, .result .wineStyle .wineDescribe { font-size: 2.5rem; color: #BC5100; margin-top: 2%; }
+
+footer { max-width: 100%; padding: 1.5%; background: #31758C; }
+
+footer .copyright { margin-left: 41%; }
+
+footer p, footer a { font-size: 1.7rem; font-family: "Nixie One", cursive; color: #fffff5; text-shadow: 1px 1px 1px #606060; }
+
+footer p { float: left; padding: 0 2%; }
+
+footer a { text-decoration: none; }
+
+footer a:hover { color: #1d4653; font-weight: bold; }
+
+footer .fa { float: left; font-size: 2.5rem; color: #a0a0a0; }
+
+footer .fa:hover { color: #1d4653; }
+
+@media (max-width: 767px) { footer .copyright { margin-left: 32%; } }
+
+@media (max-width: 600px) { footer .copyright { margin-left: 26%; } }
+
+@media (max-width: 480px) { footer { padding: 4%; }
+  footer .copyright { margin-left: 17.5%; }
+  footer p { margin-top: 0.5%; }
+  footer .fa { font-size: 3rem; } }
+
+@media (max-width: 400px) { footer { padding: 4%; }
+  footer .copyright { margin-left: 0; }
+  footer p { margin-top: 0.5%; font-size: 1.5rem; }
+  footer .fa { font-size: 3rem; } }
